@@ -1,0 +1,85 @@
+
+/* =========================
+  colors
+========================== */
+
+:root{
+    --neutral-black:hsl(0,0%,8%);
+    --neutral-400:hsl(0,0%,14%);
+    --neutral-300:hsl(0,0%,85%);
+    --neutral-200:hsl(0,0%,100%);
+
+    --active:hsl(153,71%,59%);
+    --red:hsl(0, 100%, 67%);
+
+
+ /* ==================================
+   TYPOGRAPHY
+================================== */
+
+/* =========================
+   FONT FAMILY
+========================== */
+
+--ff-space-grotesk: 'Space Grotesk', sans-serif;
+
+/* =========================
+   FONT WEIGHTS
+========================== */
+
+--fw-medium: 500;
+--fw-bold: 700;
+
+/* =========================
+   FONT SIZES
+========================== */
+
+--fs-900: 5.5rem;   /* 88px */
+--fs-800: 3rem;     /* 48px */
+--fs-700: 1.5rem;   /* 24px */
+--fs-600: 1.125rem; /* 18px */
+
+/* =========================
+   FONT 1
+   Space Grotesk Bold
+   88px / 88px
+   -2.5px
+========================== */
+
+--font-1: var(--fw-bold) var(--fs-900) / 1 var(--ff-space-grotesk);
+
+--ls-1: -0.15625rem; /* -2.5px */
+
+/* =========================
+   FONT 2
+   Space Grotesk Bold
+   48px / 56px
+   -1.5px
+========================== */
+
+--font-2: var(--fw-bold) var(--fs-800) / 1.1667 var(--ff-space-grotesk);
+
+--ls-2: -0.09375rem; /* -1.5px */
+
+/* =========================
+   FONT 3
+   Space Grotesk Bold
+   24px / 32px
+========================== */
+
+--font-3: var(--fw-bold) var(--fs-700) / 1.333 var(--ff-space-grotesk);
+
+--ls-3: 0;
+
+/* =========================
+   FONT 4
+   Space Grotesk Medium
+   18px / 28px
+========================== */
+
+--font-4: var(--fw-medium) var(--fs-600) / 1.5556 var(--ff-space-grotesk);
+
+--ls-4: 0;
+
+
+}
