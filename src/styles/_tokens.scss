@@ -34,10 +34,22 @@
    FONT SIZES
 ========================== */
 
---fs-900: 5.5rem;   /* 88px */
---fs-800: 3rem;     /* 48px */
---fs-700: 1.5rem;   /* 24px */
---fs-600: 1.125rem; /* 18px */
+/* Mobile 40px → Desktop 88px */
+--fs-900: clamp(2.5rem, 1.5rem + 5vw, 5.5rem);
+
+/* Mobile 32px → Desktop 48px */
+--fs-800: clamp(2rem, 1.5rem + 2vw, 3rem);
+
+/* Mobile 24px → Desktop 40px */
+--fs-750: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+
+/* Mobile 20px → Desktop 24px */
+--fs-700: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+
+/* Mobile 16px → Desktop 18px */
+--fs-600: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+
+
 
 /* =========================
    FONT 1
@@ -60,6 +72,8 @@
 --font-2: var(--fw-bold) var(--fs-800) / 1.1667 var(--ff-space-grotesk);
 
 --ls-2: -0.09375rem; /* -1.5px */
+
+
 
 /* =========================
    FONT 3
