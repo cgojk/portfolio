@@ -1,12 +1,5 @@
 import React from "react";
 
-import heromobileimage from "../../public/images/image-profile-mobile.webp";
-import herotabletimage from "../../public/images/image-profile-tablet.webp";
-import herodesktopimage from "../../public/images/image-profile-desktop.webp";
-
-
-
-
 
 
 export default function Expertise(){

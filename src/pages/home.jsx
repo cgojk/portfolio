@@ -1,4 +1,6 @@
 import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
+import Navigation from "../components/navigation";
 
 
 
@@ -8,8 +10,9 @@ import Hero from "../components/Hero";
 export default function Home () {
     return (
         <>
-     
+       <Navigation/>
            <Hero/>
+         
           <main>
            
 

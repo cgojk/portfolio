@@ -18,13 +18,17 @@ export default function Hero(){
     return (
  <section className="hero__section ">
     <header className="hero__header container">
-       <img src={circlepattern} alt="circle pattern" className="circle__pattern" />
-         <img src={rings} alt="rings pattern" className="rings__pattern" />
+        <div className="pattern__circle">
+           <img src={circlepattern} alt="circle pattern" className="patterns circle" />
+       </div>
+       <div className="pattern__rings">
+         <img src={rings} alt="rings pattern" className=" pattern rings" />
+       </div>
     <div className="wrapper__hero-content ">
            
       
             <div className="image__hero">
-                <picture className="image__hero">
+                <picture className="image__hero--picture">
                         <source
                             media="(min-width: 1024px)"
                             srcSet={herodesktopimage}
