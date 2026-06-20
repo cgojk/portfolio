@@ -321,10 +321,10 @@ body {
 .navigation__nav .navigation__nav--list .navigation__nav--list-item {
   list-style: none;
 }
-.navigation__nav .navigation__nav--list .navigation__nav--list-link a {
-  transition: background-color 1s ease-out 0.25s;
-  text-decoration: none;
+.navigation__nav .navigation__nav--list .navigation__nav--list-link img {
+  transition: filter 0.3s ease;
+  cursor: pointer;
 }
-.navigation__nav .navigation__nav--list .navigation__nav--list-link a:hover {
-  background-color: var(--active);
+.navigation__nav .navigation__nav--list .navigation__nav--list-link img:hover img {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(70%) saturate(600%) hue-rotate(100deg) brightness(100%) contrast(100%);
 }/*# sourceMappingURL=index.css.map */

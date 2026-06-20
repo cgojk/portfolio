@@ -1,4 +1,9 @@
 
+      /* ==============================
+                BASE STYLES
+         ==============================*/
+   
+
 body {
     background-color: var(--neutral-black);
     color: var(--neutral-200);
@@ -16,6 +21,10 @@ body {
     margin:0 auto;
 }
 
+
+    /* ==============================
+              HERO SECTION 
+         ==============================*/
 
 .hero__section{
     
@@ -58,8 +67,8 @@ body {
           z-index: 1;
 
         .rings{
-            position:absolute;
-            width: clamp(24rem, 40vw, 45rem);
+        position:absolute;
+        width: clamp(24rem, 40vw, 45rem);
         top: 250px;
         left: -140px;
         }
@@ -98,10 +107,10 @@ body {
         animation-timing-function: ease-in-out;
     }
     @keyframes slide-in {
-  from {
-    translate: 150vw 0;
-    scale: 200% 1;
-  }
+       from {
+       translate: 150vw 0;
+      scale: 200% 1;
+      }
 
   to {
     translate: 0 0;
@@ -126,9 +135,14 @@ body {
     background-color: var(--active);
     z-index: -1;
 }
+.btn__hero{
+    margin-bottom: var(--space-4);
+    }
 
-// =================================navigation=========================
-// ====================================================================
+  
+       /* ==============================
+             NAVIGATION SECTION
+         ==============================*/
 
 .navigation__nav{
         display:flex;
@@ -158,14 +172,73 @@ body {
          list-style:none;
         }
 
-            .navigation__nav--list-link a{
-                 transition: background-color 1s ease-out 0.25s;
+            .navigation__nav--list-link img{
+                 transition: filter 0.3s ease;
                 
-                text-decoration:none;
+                    cursor:pointer;
 
                 &:hover{
-                    background-color: var(--active);
+                    filter: brightness(0) saturate(100%)
+                   invert(75%) sepia(70%) saturate(600%)
+                  hue-rotate(100deg) brightness(100%) contrast(100%);
+                  }
                 }
             }
         }
-}
+
+
+
+        
+       /* ==============================
+              tools section
+         ==============================*/
+  
+
+          .tools{
+            
+            padding:var(--space-2);
+            position:relative;
+
+
+             .rings{
+              position:absolute;
+              width: clamp(24rem, 40vw, 45rem);
+              bottom: -14px;
+              left: 240px;
+        }
+          }
+          
+          .wrapper__tools--text{
+            display:flex;
+            flex-direction: column;
+          border-top: 1px solid var(--neutral-200);
+            border-bottom:1px solid var(--neutral-200);
+            padding: var(--space-4) 0;
+            gap: var(--space-4);
+            align-items: center;
+            margin-bottom:var(--space-4);
+          
+            
+            .tools__title{
+                 font: var(--font-2);
+             
+                letter-spacing: var(--ls-2);
+                text-align:center;
+            }
+            .tools__text{
+                font: var(--font-4);
+                letter-spacing: var(--ls-4);
+            }
+         }
+        
+             
+       /* ==============================
+                projects section
+         ==============================*/
+
+         .projects__content container{
+    display:flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: center;
+         }

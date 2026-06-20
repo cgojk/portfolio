@@ -7,15 +7,14 @@ import { Link } from "react-router-dom";
 
 
 
-
-export default function  ProjectsDetails (
-   {title, 
+export default function  ProjectsDetails (props){
+   const {title, 
    imagedesktop, 
    imagemobile, 
-   tools, 
+   experience, 
    linkto, 
-    linktocode})
-    {
+    linktocode} = props;
+    
 
 
     return (
@@ -41,37 +40,13 @@ export default function  ProjectsDetails (
                                                   alt="photo of Catalina G."
                                               />
                                               </picture>
-            <h2 className="projects__title">{title}</h2>
-            <p className="projects__tools">{tools}</p>
-
-            {linkto.startsWith("http") ? (
-                <a href={linkto} 
-                className="btn__hero" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                    See project
-                </a>
-            ) : (
-                <Link to={linkto} className="btn__hero">
-                    See project
-                </Link>
-            )}
-           {linktocode &&
-           (linktocode.startsWith("http") ? (
-          <a
-           href={linktocode}
-           className="btn__hero"
-           target="_blank"
-            rel="noopener noreferrer"
-           >
-           See code
-           </a>
-          ) : (
-         <Link to={linktocode} className="btn__hero">
-            See code
-         </Link>
-        ))}
-
+                                        <h2 className="projects__title">{title}</h2>
+                                         <p className="projects__tools">{experience}</p>
+                                            <div className="projects__links">
+                                                <h2 className="project_link">project link</h2>
+                                                <h2 className="contact">link code</h2>
+                                            </div>
+           
         </li>
  </ul>
  </>
