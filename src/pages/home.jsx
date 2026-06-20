@@ -13,10 +13,7 @@ export default function Home () {
        <Navigation/>
            <Hero/>
          
-          <main>
-           
-
-            </main>
+       
       
 
      

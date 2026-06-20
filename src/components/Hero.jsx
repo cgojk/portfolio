@@ -49,9 +49,10 @@ export default function Hero(){
                    <h1 className="title__hero">Nice to meet you! I'm <span className="highlight">Adam Keyes.</span></h1>
                    <p className="hero_text">
                     Based in the UK, I’m a front-end developer
-                    passionate about building accessible web apps that users love. I’ve had the privilege of working at a start-up and a huge corporation. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement.
+                    passionate about building accessible web
+                     apps that users love. 
                   </p>
-                <Link to="/contact" className="btn__hero">Contact me</Link>
+                <Link to="/contact" className="btn__hero"><span className="highlight">Contact me</span></Link>
                             
               </div>
 

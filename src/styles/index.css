@@ -145,6 +145,7 @@ p {
      FONT WEIGHTS
   ========================== */
   --fw-medium: 500;
+  --fw-regular: 400;
   --fw-bold: 700;
   /* =========================
      FONT SIZES
@@ -187,7 +188,7 @@ p {
      Space Grotesk Medium
      18px / 28px
   ========================== */
-  --font-4: var(--fw-medium) var(--fs-600) / 1.5556 var(--ff-space-grotesk);
+  --font-4: var(--fw-regular) var(--fs-600) / 1.5556 var(--ff-space-grotesk);
   --ls-4: 0;
 }
 
@@ -204,15 +205,7 @@ body {
   margin: 0 auto;
 }
 
-.hero__section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .image__hero--picture img {
-  display: flex;
-  justify-content: center;
   width: 100%;
   max-width: 174px;
   max-height: 383px;
@@ -239,8 +232,8 @@ body {
 }
 .hero__header .pattern__rings {
   position: absolute;
-  inset: 0; /* ocupa todo el hero */
-  pointer-events: none; /* que no interfiera con clicks */
+  inset: 0;
+  pointer-events: none;
   z-index: 1;
 }
 .hero__header .pattern__rings .rings {
@@ -254,12 +247,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
 }
 
 .info__hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2em;
   gap: 2rem;
 }
 .info__hero .title__hero {
@@ -271,6 +266,20 @@ body {
   font: var(--font-4);
   letter-spacing: var(--ls-4);
   text-align: center;
+  animation-duration: 2s;
+  animation-name: slide-in;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }
 
 .highlight {
@@ -296,8 +305,26 @@ body {
   gap: 2rem;
   align-items: center;
 }
-
-.navigation__nav--list {
+.navigation__nav .navigation__nav--logo .navigation__nav--link {
+  transition: background-color 1s ease-out 0.25s;
+  font: var(--font-4);
+  letter-spacing: var(--ls-4);
+  cursor: pointer;
+}
+.navigation__nav .navigation__nav--logo .navigation__nav--link:hover {
+  background-color: var(--active);
+}
+.navigation__nav .navigation__nav--list {
   display: flex;
   gap: 2rem;
+}
+.navigation__nav .navigation__nav--list .navigation__nav--list-item {
+  list-style: none;
+}
+.navigation__nav .navigation__nav--list .navigation__nav--list-link a {
+  transition: background-color 1s ease-out 0.25s;
+  text-decoration: none;
+}
+.navigation__nav .navigation__nav--list .navigation__nav--list-link a:hover {
+  background-color: var(--active);
 }/*# sourceMappingURL=index.css.map */
