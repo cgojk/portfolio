@@ -4,6 +4,7 @@ import Navigation from "../components/navigation";
 import Tools from "../components/Tools";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 
 
@@ -18,6 +19,7 @@ export default function Home () {
             <Tools/>
             <Projects/>
                 <Contact/>
+                <Footer/>
          
        
       

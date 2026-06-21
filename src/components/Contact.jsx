@@ -20,13 +20,13 @@ export default function  Contact (){
         </div>
         <div className="contact__input">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" className="email__input" name="email" required />
+            <input type="email" id="email" className="email__input" name="email" placeholder="email" />
         </div>
         <div className="contact__input">
             <label htmlFor="message">Message</label>
             <textarea id="message" className="message__input" name="message" rows="5" required></textarea>
         </div>
-        <Button type="submit" size="size">
+        <Button type="submit" size="size" className="contact__button">
             Send Message
         </Button>
     </form>

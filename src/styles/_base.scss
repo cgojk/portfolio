@@ -312,7 +312,8 @@ body {
 
           .contact__form{
             background-color:var(--neutral-400);
-            padding:var(--space-2);
+            padding:var(--space-4);
+
 
             .contact__title{
                 font: var(--font-2);
@@ -342,20 +343,60 @@ body {
                     width: 100%;
                     background-color: transparent;
                     border: none;
+
+                    &:focus-visible {
+                        outline: none;
+                        outline-offset: none;
+                    }
                 }
                 .email__input{
                     width: 100%;
                     background-color: transparent;
                     border: none;
+
+                    &:focus-visible {
+                         &:focus-visible {
+                        outline: none;
+                        outline-offset: none;
+                    }
+                    }
                 }
                 .message__input{
                     width: 100%;
                     background-color: transparent;
                     border: none;
+
+                    &:focus-visible {
+                         &:focus-visible {
+                        outline: none;
+                        outline-offset: none;
+                    }
+                    }
+
                 }
             }
 
           }
 
+          .contact__button{
+            margin-top: var(--space-2);
+            align-self: flex-end;
+            cursor:pointer;
+          }
 
+// ===============================================================
 
+// footer styles ======================================================
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    align-items: center;
+    padding: var(--space-4) 0;
+
+    .footer__copyright{
+        font: var(--font-6);
+        letter-spacing: var(--ls-6);
+    }
+}
