@@ -1,25 +1,19 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
-
 import ProjectsDetails from "./ProjectsDetails";
-
 import data from "../data";
-
-
-
-
-
-
+import Button from "./UI/Button";
 
 
 
 export default function  Projects (){
     return (
- <section className="projects__section ">
+ <section className="projects__section container ">
     <div className="projects__tools">
        <h1 className="projects__title">Projects</h1>
-       <Link to="/contact" className="btn__hero">Contact me</Link>
+       <Button to="/contact">
+         Contact me
+       </Button>
     </div>
     <div className="projects__content container">
       {data.map((project) => (

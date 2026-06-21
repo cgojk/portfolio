@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import heromobileimage from "../images/image-profile-mobile.webp"
 import herotableimage from "../images/image-profile-mobile.webp";
 import herodesktopimage from "../images/image-profile-desktop.webp";
+import Button from "../components/UI/Button";
 
 
 import circlepattern from "../images/pattern-circle.svg";
@@ -52,9 +53,8 @@ export default function Hero(){
                     passionate about building accessible web
                      apps that users love. 
                   </p>
-                <Link to="/contact" className="btn__hero"><span className="highlight">Contact me</span></Link>
-                            
-              </div>
+                  <Button to="/contact"> Contact me</Button>
+                </div>
 
            
          </div>

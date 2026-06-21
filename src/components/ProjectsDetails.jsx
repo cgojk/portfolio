@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-
+import Button from "./UI/Button";
 
 
 
@@ -12,8 +12,7 @@ export default function  ProjectsDetails (props){
    imagedesktop, 
    imagemobile, 
    experience, 
-   linkto, 
-    linktocode} = props;
+     } = props;
     
 
 
@@ -37,14 +36,17 @@ export default function  ProjectsDetails (props){
                       
                                               <img
                                                   src={imagemobile}
-                                                  alt="photo of Catalina G."
+                                                  alt="photo of Adam Keyes."
                                               />
                                               </picture>
                                         <h2 className="projects__title">{title}</h2>
-                                         <p className="projects__tools">{experience}</p>
+                                         <p className="projects__experience">{
+                                         experience.map((skill, index) => (
+                                             <span key={index}>{skill}</span>
+                                         ))}</p>
                                             <div className="projects__links">
-                                                <h2 className="project_link">project link</h2>
-                                                <h2 className="contact">link code</h2>
+                                                <Button to="#" className="button--size">project link</Button>
+                                                <Button to="#" className="button--size">link code</Button>
                                             </div>
            
         </li>

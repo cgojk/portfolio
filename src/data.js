@@ -34,7 +34,7 @@ export default [
         title: "Design Portfolio",
         imagedesktop: designportfoliodesktop,
         imagemobile: designportfoliomobile,
-        experience: ["HTML", "CSS", "JavaScript"],
+        experience: ["HTML", "CSS"],
         alt: "photo of design portfolio project",
              
         // linkto: "/projects/design-portfolio",
@@ -45,7 +45,7 @@ export default [
         title: "E-learning landing page",
         imagedesktop: elearningdesktop,
          imagemobile: elearningmobile,
-        experience: ["HTML", "CSS", "JavaScript"],
+        experience: ["HTML", "CSS"],
         alt: "photo of e-learning landing page project",
         // linkto: "/projects/e-learning-landing-page",
        
@@ -80,7 +80,10 @@ export default [
         title: "Memory game",
         imagedesktop: memorygamedesktop,
         imagemobile: memorygamemobile,
-        experience: ["HTML", "CSS", "JavaScript"],
+        experience: [
+            "HTML",
+             "CSS", 
+             "JavaScript"],
         alt: "photo of memory game project",
         // linkto: "/projects/memory-game",
         

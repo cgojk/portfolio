@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf) format("truetype");
   font-weight: 100 900;
   font-style: normal;
@@ -160,6 +160,7 @@ p {
   --fs-700: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
   /* Mobile 16px → Desktop 18px */
   --fs-600: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --fs-500: clamp(0.875rem, 0.85rem + 0.25vw, 1rem);
   /* =========================
      FONT 1
      Space Grotesk Bold
@@ -182,16 +183,27 @@ p {
      24px / 32px
   ========================== */
   --font-3: var(--fw-bold) var(--fs-700) / 1.333 var(--ff-space-grotesk);
-  --ls-3: 0;
+  --ls-3: -0.0625rem; /* -1px */
   /* =========================
      FONT 4
      Space Grotesk Medium
      18px / 28px
   ========================== */
   --font-4: var(--fw-regular) var(--fs-600) / 1.5556 var(--ff-space-grotesk);
-  --ls-4: 0;
+  --ls-4: 1.2px;
+  --font-5: var(--fw-medium) var(--fs-500) / 1.5556 var(--ff-space-grotesk);
+  --ls-5: 0.1px;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6:3rem;
+  --space-8:4rem;
 }
 
+/* =========================================================
+          BASE STYLES
+   =========================================================*/
 body {
   background-color: var(--neutral-black);
   color: var(--neutral-200);
@@ -205,6 +217,33 @@ body {
   margin: 0 auto;
 }
 
+.button {
+  font: var(--font-4);
+  letter-spacing: var(--ls-4);
+  color: var(--neutral-200);
+  text-decoration: underline;
+  text-decoration-color: var(--active);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.9rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+.button:hover {
+  color: var(--active);
+}
+.button .button:focus-visible {
+  outline: 2px solid var(--active);
+  outline-offset: 4px;
+}
+
+.button--size {
+  font: var(--font-5);
+  letter-spacing: var(--ls-5);
+}
+
+/* ==============================
+          HERO SECTION 
+     ==============================*/
 .image__hero--picture img {
   width: 100%;
   max-width: 174px;
@@ -239,7 +278,7 @@ body {
 .hero__header .pattern__rings .rings {
   position: absolute;
   width: clamp(24rem, 40vw, 45rem);
-  top: 250px;
+  top: 150px;
   left: -140px;
 }
 
@@ -282,23 +321,9 @@ body {
   }
 }
 
-.highlight {
-  color: var(--neutral-200);
-  position: relative;
-  display: inline-block;
-}
-
-.highlight::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0.5rem;
-  background-color: var(--active);
-  z-index: -1;
-}
-
+/* ==============================
+      NAVIGATION SECTION
+  ==============================*/
 .navigation__nav {
   display: flex;
   flex-direction: column;
@@ -325,6 +350,128 @@ body {
   transition: filter 0.3s ease;
   cursor: pointer;
 }
-.navigation__nav .navigation__nav--list .navigation__nav--list-link img:hover img {
+.navigation__nav .navigation__nav--list .navigation__nav--list-link img:hover {
   filter: brightness(0) saturate(100%) invert(75%) sepia(70%) saturate(600%) hue-rotate(100deg) brightness(100%) contrast(100%);
+}
+
+/* ==============================
+       tools section
+  ==============================*/
+.tools {
+  padding: var(--space-2);
+  position: relative;
+}
+.tools .rings {
+  position: absolute;
+  width: clamp(24rem, 40vw, 45rem);
+  bottom: -1px;
+  left: 240px;
+}
+
+.wrapper__tools--text {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--neutral-200);
+  border-bottom: 1px solid var(--neutral-200);
+  padding: var(--space-4) 0;
+  gap: var(--space-4);
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+.wrapper__tools--text .tools__title {
+  font: var(--font-2);
+  letter-spacing: var(--ls-2);
+  text-align: center;
+}
+.wrapper__tools--text .tools__text {
+  font: var(--font-4);
+  letter-spacing: var(--ls-4);
+}
+
+/* ==============================
+         projects section
+  ==============================*/
+.projects__section {
+  padding: var(--space-2);
+}
+
+.projects__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.projects__tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+.projects__tools .btn__hero {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.projects__tools--list .projects__tools--list-item {
+  margin-bottom: var(--space-4);
+}
+.projects__tools--list .projects__tools--list-item .projects__title {
+  font: var(--font-3);
+  letter-spacing: var(--ls-3);
+  text-transform: uppercase;
+  margin-top: var(--space-2);
+}
+.projects__tools--list .projects__tools--list-item .projects__experience {
+  display: flex;
+  gap: var(--space-2);
+  font: var(--font-4);
+  margin-bottom: var(--space-2);
+}
+
+.projects__links {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.contact__form {
+  background-color: var(--neutral-400);
+  padding: var(--space-2);
+}
+.contact__form .contact__title {
+  font: var(--font-2);
+  letter-spacing: var(--ls-2);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+.contact__form .contact__description {
+  font: var(--font-4);
+  letter-spacing: var(--ls-4);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.contact__content .contact__input {
+  border-bottom: 1px solid var(--neutral-200);
+  padding: var(--space-1) 0;
+}
+.contact__content .contact__input .name__input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.contact__content .contact__input .email__input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+.contact__content .contact__input .message__input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
 }/*# sourceMappingURL=index.css.map */

@@ -50,7 +50,7 @@
 /* Mobile 16px → Desktop 18px */
 --fs-600: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
 
-
+--fs-500: clamp(0.875rem, 0.85rem + 0.25vw, 1rem);
 
 /* =========================
    FONT 1
@@ -84,7 +84,7 @@
 
 --font-3: var(--fw-bold) var(--fs-700) / 1.333 var(--ff-space-grotesk);
 
---ls-3: 0;
+--ls-3: -0.0625rem; /* -1px */
 
 /* =========================
    FONT 4
@@ -94,8 +94,11 @@
 
 --font-4: var(--fw-regular) var(--fs-600) / 1.5556 var(--ff-space-grotesk);
 
---ls-4: 0;
+--ls-4: 1.2px;
 
+
+--font-5: var(--fw-medium) var(--fs-500) / 1.5556 var(--ff-space-grotesk);
+--ls-5: 0.1px;
 // spacing
 --space-1: 0.5rem;
 --space-2: 1rem;
