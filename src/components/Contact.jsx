@@ -11,7 +11,8 @@ export default function  Contact (){
  <section className="contact__form container ">
     <img src ={rings} alt="rings pattern" className="pattern rings" />
     <h1 className="contact__title">Contact </h1>
-    <p className="contact__description"> I would love to hear about your project and how i could help.  Please fill in the form, and i'll get back to you as soon as possible.</p>
+    <p className="contact__description"> I would love to hear about your project and how I could help.
+          Please fill in the form, and I'll get back to you as soon as possible.</p>
 
     <form className="contact__content">
         <div className="contact__input">
@@ -20,7 +21,7 @@ export default function  Contact (){
         </div>
         <div className="contact__input">
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" className="email__input" name="email" placeholder="email" />
+            <input type="email" id="email" className="email__input" name="email" />
         </div>
         <div className="contact__input">
             <label htmlFor="message">Message</label>

@@ -1,18 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import heromobileimage from "../images/image-profile-mobile.webp"
-import herotableimage from "../images/image-profile-mobile.webp";
+import herotableimage from "../images/image-profile-tablet.webp"
 import herodesktopimage from "../images/image-profile-desktop.webp";
 import Button from "../components/UI/Button";
-
-
 import circlepattern from "../images/pattern-circle.svg";
 import rings from "../images/pattern-rings.svg";
-
-
-
-
-
 
 
 export default function Hero(){

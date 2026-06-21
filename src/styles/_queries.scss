@@ -1,0 +1,29 @@
+
+@media only screen and (min-width: 710px) {
+.wrapper__hero-content {
+  display:grid;
+   grid-template-columns: 1fr auto;
+    grid-template-areas: "text image";
+   align-items: center;
+    gap: var(--space-4);
+}
+
+.image__hero{
+    grid-area:image;
+
+    .image__hero--picture img {
+     width: 322px;
+    height: auto;
+    max-height:none;
+    max-width:none;
+   
+    
+}
+}
+.info__hero{
+    grid-area:text;
+}
+
+
+
+}

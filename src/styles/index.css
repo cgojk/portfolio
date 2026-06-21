@@ -526,4 +526,24 @@ body {
 .footer .footer__copyright {
   font: var(--font-6);
   letter-spacing: var(--ls-6);
+}
+
+@media only screen and (min-width: 710px) {
+  .wrapper__hero-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas: "text image";
+    gap: var(--space-4);
+  }
+  .image__hero {
+    grid-area: "image";
+  }
+  .info__hero {
+    grid-area: "text";
+  }
+  .image__hero--picture img .image__hero--picture img {
+    width: auto;
+    max-width: none;
+    height: auto;
+  }
 }/*# sourceMappingURL=index.css.map */

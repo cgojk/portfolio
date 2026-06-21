@@ -4,7 +4,7 @@ const tools =[
     {name: "HTML", experience: "4 Years experience"},
     {name: "CSS", experience: "4 Years experience"},
     {name: "JavaScript", experience: "4 Years experience"},
-    {name: "Accessiblity", experience: "4 Years experience"},
+    {name: "Accessibility", experience: "4 Years experience"},
     {name: "React", experience: "3 Years experience"},
     {name: "Sass", experience: "3 Years experience"},
 ]
