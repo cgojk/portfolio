@@ -10,11 +10,7 @@ body {
     font-family: var(--ff-space-grotesk);
     font:var(--font-4);
     letter-spacing: var(--ls-4);
-
-   
-
-
-}
+    line-height: 1.5;}
 
 .container{
     max-width: 1200px;
@@ -27,28 +23,24 @@ body {
 // ===============================================================
 
 .button {
-  font: var(--font-4);
-  letter-spacing: var(--ls-4);
+    font: var(--font-4);
+    letter-spacing: var(--ls-4);
+    color: var(--neutral-200);
+    text-decoration: underline;
+    text-decoration-color: var(--active);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 
-  color: var(--neutral-200);
+    &:hover {
+        color: var(--active);
+    }
 
-  text-decoration: underline;
-  text-decoration-color: var(--active);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.9rem;
-
-  text-transform: uppercase;
-
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: var(--active);
-  }
-
-  .button:focus-visible {
-  outline: 2px solid var(--active);
-  outline-offset: 4px;
-}
+    .button:focus-visible {
+    outline: 2px solid var(--active);
+    outline-offset: 4px;
+    }
 
 }
 
@@ -61,10 +53,7 @@ body {
               HERO SECTION 
          ==============================*/
 
-.hero__section{
-    
 
-}
 .image__hero--picture img{
    
     width: 100%;
@@ -77,6 +66,7 @@ body {
     flex-direction: column;
     gap: 2rem;
     position:relative;
+     overflow: visible;
         
 
 
@@ -158,11 +148,18 @@ body {
              NAVIGATION SECTION
          ==============================*/
 
+.navigation{
+    padding: var(--space-4);
+}
+
 .navigation__nav{
         display:flex;
         flex-direction:column;
         gap: 2rem;
         align-items: center;
+        position:relative;
+        z-index:10;
+
 
         .navigation__nav--logo{
 

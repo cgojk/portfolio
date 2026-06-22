@@ -2,7 +2,7 @@
 @media only screen and (min-width: 710px) {
 .wrapper__hero-content {
   display:grid;
-   grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
     grid-template-areas: "text image";
    align-items: center;
     gap: var(--space-4);
@@ -10,6 +10,11 @@
 
 .image__hero{
     grid-area:image;
+    justify-self:end;
+    position: relative;
+    top: -90px;
+    z-index: 1;
+   
 
     .image__hero--picture img {
      width: 322px;
@@ -17,13 +22,45 @@
     max-height:none;
     max-width:none;
    
+   
     
+
 }
 }
 .info__hero{
     grid-area:text;
 }
 
+.navigation__nav{
+    display:grid;
+  grid-template-columns: 1fr 1fr;
+    align-items: center;
+        
+.navigation__nav--list{
+    display:flex;
+    justify-content: flex-end;
+    gap: var(--space-4);
+
+}
+}
+
+}
 
 
+@media only screen and (min-width: 1024px) {
+.image__hero{
+   
+   
+
+    .image__hero--picture img {
+     width: 522px;
+    height: auto;
+    max-height:none;
+    max-width:none;
+   
+   
+    
+
+}
+}
 }

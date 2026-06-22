@@ -13,7 +13,7 @@ import twitter from "../images/icon-twitter.svg";
 export default function Navigation(){
     return (
         <section className="navigation">
-            <nav className="navigation__nav">
+            <nav className="navigation__nav container">
                 <div className="navigation__nav--logo">
                 <Link to="/" className="navigation__nav--link">adamKeyes</Link>
                 </div>
