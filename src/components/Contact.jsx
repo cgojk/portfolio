@@ -115,7 +115,7 @@ export default function Contact() {
 
                 <div className="contact__input">
                     <label htmlFor="message">Message</label>
-                    <textarea className="message__input" id="message" name="message" rows="5" onChange={() => setMessageError("")}></textarea>
+                    <textarea className="message__input" id="message" name="message" rows="2" onChange={() => setMessageError("")}></textarea>
                     {messageError && 
                     <p className="error">{messageError}</p>}
                 </div>

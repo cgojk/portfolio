@@ -10,12 +10,12 @@ export default function  Projects (){
     return (
  <section className="projects__section container ">
     <div className="projects__tools">
-       <h1 className="projects__title">Projects</h1>
+       <h1 className="project__title--portfolio">Projects</h1>
        <Button to="/contact">
          Contact me
        </Button>
     </div>
-    <div className="projects__content container">
+    <ul className="projects__content container">
       {data.map((project) => (
          <ProjectsDetails
             key={project.id}
@@ -26,7 +26,7 @@ export default function  Projects (){
             
          />
       ))}
-      </div>
+      </ul>
 
 </section>
 

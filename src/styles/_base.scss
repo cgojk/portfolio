@@ -295,6 +295,12 @@ width: 100%;
             align-items: center;
             margin-bottom:var(--space-4);
 
+            .project__title--portfolio{
+                font: var(--font-2);
+                letter-spacing: var(--ls-2);
+                text-align:center;
+            }
+
             .btn__hero{
                 margin-top:auto;
                 margin-bottom:auto;
