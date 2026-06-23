@@ -76,12 +76,14 @@ export default function Contact() {
     return (
         <section className="contact__form container ">
             <img src={rings} alt="rings pattern" className="pattern rings" />
-            <h1 className="contact__title">Contact</h1>
+            <div className="wrapper__title__form">
+                    <h1 className="contact__title">Contact</h1>
 
-            <p className="contact__description">
-                I would love to hear about your project and how I could help.
-                Please fill in the form, and I'll get back to you as soon as possible.
-            </p>
+                    <p className="contact__description">
+                        I would love to hear about your project and how I could help.
+                        Please fill in the form, and I'll get back to you as soon as possible.
+                    </p>
+            </div>
 
             <form
                 onSubmit={(e) => {
