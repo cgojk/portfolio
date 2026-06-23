@@ -6,9 +6,11 @@ export default function Button({
   to,
   href,
   className,
+  type="button",
  size
 }) {
-  const classes = classNames("button", 
+  const classes = classNames(
+    "button", 
    size ? `button--${size}` : null,
      className);
 
@@ -20,9 +22,18 @@ export default function Button({
     );
   }
 
-  return (
-    <a href={href} className={classes}>
+  if (href) {
+    return (
+      <a href={href} className={classes}>
+        {children}
+      </a>
+    );
+  }
+
+
+   return (
+    <button type={type} className={classes}>
       {children}
-    </a>
+    </button>
   );
 }

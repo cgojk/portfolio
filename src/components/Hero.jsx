@@ -12,9 +12,9 @@ export default function Hero(){
     return (
  <section className="hero__section ">
     <header className="hero__header container">
-        <div className="pattern__circle">
+        {/* <div className="pattern__circle">
            <img src={circlepattern} alt="circle pattern" className="patterns circle" />
-       </div>
+       </div> */}
        <div className="pattern__rings">
          <img src={rings} alt="rings pattern" className=" pattern rings" />
        </div>
@@ -22,6 +22,13 @@ export default function Hero(){
            
       
             <div className="image__hero">
+              <img
+              src={circlepattern}
+               alt=""
+    className="circle"
+    aria-hidden="true"
+  />
+
                 <picture className="image__hero--picture">
                         <source
                             media="(min-width: 1024px)"
