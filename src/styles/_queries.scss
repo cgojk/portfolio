@@ -138,24 +138,37 @@
     overflow: hidden;
     width: 100%;
 
+    //  transform: translateY(0);
+
 .hover__image--effect{
     position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-     background-color: rgba(17, 15, 15, 0.74); /* Black with 50% opacity */
+  inset:0;
+
+background-color: rgba(17, 15, 15, 0.74); /* Black with 50% opacity */
   opacity: 0; /* Fully transparent by default */
-  transition: opacity 0.3s ease-in-out; /* Creates a smooth fade */
+  transition: opacity 0.3s ease-in-out; 
+
   cursor:pointer;
 
     &:hover {
         opacity: 1;
+        
     }
+    &:active {
+        opacity: 1;
+    }
+
 }
 }
 .projects__tools--list{
     position:relative;
+   
+
+ 
     .projects__tools--list-item{
    
 
@@ -164,16 +177,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    opacity: 0;
+    
+    
+    // opacity: 0;
     transition: opacity 400ms ease-in-out;
 
-    &:hover{
-        opacity: 1;
-    }
+    // &:hover{
+    //     opacity: 1;
+    // }
      
   }
-    }
+ }
 }
 
 .info__hero{
