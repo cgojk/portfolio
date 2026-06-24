@@ -1,0 +1,52 @@
+# Frontend Mentor - Single-page developer portfolio solution
+
+This is a solution to the [Single-page developer portfolio challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Overview
+
+### Screenshot
+
+![alt text](image.png)
+
+### Links
+
+- Solution URL:https://github.com/cgojk/portfolio.git
+- Live Site URL:
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+  -styles
+  -React
+
+### What I learned
+
+Continued developing my understanding of position: absolute and position: relative, and how they can be used to control layout and positioning in CSS.
+Explored usability concepts in React through the design and implementation of custom buttons.
+
+### Continued development
+
+Continue improving my SCSS skills by writing cleaner, more accessible, and maintainable code that is easier to scale, follow, and debug.
+Focus on creating more consistent spacing and padding across different screen sizes to improve responsiveness and the overall user experience.
+Continue learning and developing my React skills, as I enjoy working with it and want to deepen my understanding of component-based development and state management.
+
+### Useful resources
+
+-MDN Web Docs — A reliable resource for learning CSS, SCSS, React, and modern web development concepts.
+Sass Documentation — Helped me understand SCSS features such as variables, nesting, mixins, and code organisation.
+React Documentation — Useful for learning React concepts, components, state management, hooks, and best practices.
+
+### AI Collaboration
+
+I used ChatGPT to help debug some silly CSS and React issues, understand concepts such as positioning.ChatGPT was helpful for explaining concepts, troubleshooting errors, and suggesting alternative approaches when I was stuck.
+What didn't work: Some suggestions required further testing and adjustment to fit my project's specific requirements. I still needed to verify solutions and ensure they followed best practices for my implementation.
+
+## Author
+
+Catalina G.
