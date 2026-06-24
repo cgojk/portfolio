@@ -74,7 +74,7 @@ export default function Contact() {
     setSuccessMessage("");
     }, 3000);
     return (
-<section className="contact__form  ">
+<section className="contact__form ">
     <div className="wrapper__form container">
              
             <div className="wrapper__title__form">
@@ -101,7 +101,10 @@ export default function Contact() {
                     id="name" name="name"
                      onChange={() => setNameError("")} />
                     {nameError && 
-                    <p className="error">{nameError}</p>}
+                    <p className="error"
+                    role="alert"
+                    aria-live="assertive"
+                    >{nameError}</p>}
                 </div>
 
                 <div className="contact__input">
@@ -111,14 +114,20 @@ export default function Contact() {
                     id="email" name="email" 
                     onChange={() => setEmailError("")} />
                     {emailError &&
-                    <p className="error">{emailError}</p>}
+                    <p className="error"
+                    role="alert"
+                    aria-live="assertive"
+                    >{emailError}</p>}
                 </div>
 
                 <div className="contact__input">
                     <label htmlFor="message">Message</label>
-                    <textarea className="message__input" id="message" name="message" rows="2kkk" onChange={() => setMessageError("")}></textarea>
+                    <textarea className="message__input" id="message" name="message" rows="2" onChange={() => setMessageError("")}></textarea>
                     {messageError && 
-                    <p className="error">{messageError}</p>}
+                    <p className="error"
+                    role="alert"
+                    aria-live="assertive"
+                    >{messageError}</p>}
                 </div>
 
                 <Button type="submit" size="size" className="contact__button">
@@ -126,7 +135,10 @@ export default function Contact() {
                 </Button>
             </form>
             {successMessage && (
-           <p className="success">{successMessage}</p>
+           <p className="success"
+           role="status"
+           aria-live="polite"
+           >{successMessage}</p>
     
 
 )}
