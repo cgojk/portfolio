@@ -237,7 +237,7 @@ width: 100%;
 
           .tools{
             
-            padding:var(--space-4);
+            padding:var(--space-8) var(--space-4);
             position:relative;
 
 
@@ -255,7 +255,7 @@ width: 100%;
             flex-direction: column;
            border-top: 1px solid var(--neutral-200);
             border-bottom:1px solid var(--neutral-200);
-            padding: var(--space-4) 0;
+            padding: var(--space-8) 0;
             gap: var(--space-4);
             align-items: center;
             margin-bottom:var(--space-4);
@@ -296,6 +296,7 @@ width: 100%;
             justify-content: space-between;
             align-items: center;
             margin-bottom:var(--space-4);
+            margin-top:var(--space-8);
 
             .project__title--portfolio{
                 font: var(--font-2);
