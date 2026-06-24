@@ -21,12 +21,8 @@ export default function  ProjectsDetails (props){
 
  <li className="projects__tools--list">
         <div className="projects__tools--list-item">
-
-            
-                    <div className="wrapper__image">
-                      
-                        
-                        <picture className="project1__image">
+                <div className="wrapper__image">                        
+                    <picture className="project1__image">
                             <source
                                 media="(min-width: 1024px)"
                                 srcSet={imagedesktop}
@@ -42,20 +38,23 @@ export default function  ProjectsDetails (props){
                                 alt="project image"
                                 />
                             </picture>
-                              <div className="hover__image--effect">
-                    </div>
-                </div>
-            <div className="details__images">
-                <h2 className="projects__title">{title}</h2>
-                     <p className="projects__experience">{
-                         experience.map((skill, index) => (
-                             <span key={index}>{skill}</span>
-                             ))}</p>
-                    <div className="projects__links">
-                      <Button to="#" className="button--size">project link</Button>
-                       <Button to="#" className="button--size">link code</Button>
+                    <div className="hover__image--effect">
+                   </div>
             </div>
-     </div>
+        <div className="details__images">
+                <div className="title__links">
+                    <h1 className="projects__title">{title}</h1>
+                        <p className="projects__experience">{
+                            experience.map((skill, index) => (
+                                <span key={index}>{skill}</span>
+                                ))}</p>
+                </div>
+                <div className="projects__links">
+                            <Button to="#" className="button--size hover__link">project link</Button>
+                            <Button to="#" className="button--size hover__link">link code</Button>
+                </div>
+            
+         </div>
            
  </div>
  </li>

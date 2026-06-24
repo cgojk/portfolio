@@ -10,13 +10,14 @@ import twitter from "../images/icon-twitter.svg";
 
 
 
-export default function Navigation(){
+export default function Navigation({footer=false}){
     return (
-        <section className="navigation">
-            <nav className="navigation__nav container">
+      <section className="navigation">
+            <nav className={`navigation__nav container ${footer ? "navigation__nav--footer" : ""}`}>
                 <div className="navigation__nav--logo">
                 <Link to="/" className="navigation__nav--link">adamKeyes</Link>
                 </div>
+                <div className="wrapper__navigation--list">
                 <ul className="navigation__nav--list">
                     <li className="navigation__nav--list-item">
                         <a href="#github" className="navigation__nav--list-link">
@@ -39,8 +40,10 @@ export default function Navigation(){
                         </a>
                     </li>
                 </ul>
+                </div>
             </nav>
-        </section>
+            </section>
+      
 
   );
 }

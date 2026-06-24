@@ -74,8 +74,9 @@ export default function Contact() {
     setSuccessMessage("");
     }, 3000);
     return (
-        <section className="contact__form container ">
-            <img src={rings} alt="rings pattern" className="pattern rings" />
+<section className="contact__form  ">
+    <div className="wrapper__form container">
+             
             <div className="wrapper__title__form">
                     <h1 className="contact__title">Contact</h1>
 
@@ -115,7 +116,7 @@ export default function Contact() {
 
                 <div className="contact__input">
                     <label htmlFor="message">Message</label>
-                    <textarea className="message__input" id="message" name="message" rows="2" onChange={() => setMessageError("")}></textarea>
+                    <textarea className="message__input" id="message" name="message" rows="2kkk" onChange={() => setMessageError("")}></textarea>
                     {messageError && 
                     <p className="error">{messageError}</p>}
                 </div>
@@ -126,7 +127,13 @@ export default function Contact() {
             </form>
             {successMessage && (
            <p className="success">{successMessage}</p>
+    
+
 )}
+
+
+    </div>
+    <img src={rings} alt="rings pattern" className="pattern rings" />
         </section>
     );
 }

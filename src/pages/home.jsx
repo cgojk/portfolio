@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 
 
 
+
 export default function Home () {
     return (
         <>
@@ -18,8 +19,9 @@ export default function Home () {
            <Hero/>
             <Tools/>
             <Projects/>
-                <Contact/>
-                <Footer/>
+            <Contact/>
+          
+            <Footer/>
          
        
       
