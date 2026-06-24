@@ -108,7 +108,7 @@ width: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding:2em;
+    padding: var(--space-2);
     gap: 2rem;
 
     .title__hero{
@@ -179,7 +179,7 @@ width: 100%;
          ==============================*/
 
 .navigation{
-    padding: var(--space-4);
+    padding: var(--space-2);
 }
 
 .navigation__nav{

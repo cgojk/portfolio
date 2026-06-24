@@ -12,19 +12,15 @@ export default function Hero(){
     return (
  <section className="hero__section ">
     <header className="hero__header container">
-        {/* <div className="pattern__circle">
-           <img src={circlepattern} alt="circle pattern" className="patterns circle" />
-       </div> */}
+       
        <div className="pattern__rings">
          <img src={rings} alt="rings pattern" className=" pattern rings" />
        </div>
     <div className="wrapper__hero-content ">
-           
-      
-            <div className="image__hero">
-              <img
-              src={circlepattern}
-               alt=""
+     <div className="image__hero">
+        <img
+        src={circlepattern}
+         alt=""
     className="circle"
     aria-hidden="true"
   />
@@ -47,7 +43,7 @@ export default function Hero(){
 
 
                 <div className="info__hero">
-                   <h1 className="title__hero">Nice to meet you! I'm <span className="highlight">Adam Keyes.</span></h1>
+                   <h1 className="title__hero">Nice to meet you!  I'm <span className="highlight">Adam Keyes.</span></h1>
                    <p className="hero_text">
                     Based in the UK, I’m a front-end developer
                     passionate about building accessible web
