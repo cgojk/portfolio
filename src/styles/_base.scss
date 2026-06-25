@@ -38,7 +38,7 @@ body {
         color: var(--active);
     }
 
-    .button:focus-visible {
+    &.button:focus-visible {
     outline: 2px solid var(--active);
     outline-offset: 4px;
     }

@@ -74,7 +74,7 @@ export default function Contact() {
     setSuccessMessage("");
     }, 3000);
     return (
-<section className="contact__form ">
+<section id="contact" className="contact__form ">
     <div className="wrapper__form container">
              
             <div className="wrapper__title__form">
@@ -98,12 +98,16 @@ export default function Contact() {
                     <label htmlFor="name">Name</label>
                     <input type="text" 
                     className="name__input" 
-                    id="name" name="name"
+                    id="name" 
+                    name="name"
+                    aria-describedby="name-error"
+                    aria-invalid={!!nameError}
                      onChange={() => setNameError("")} />
                     {nameError && 
                     <p className="error"
+                    id="name-error"
                     role="alert"
-                    aria-live="assertive"
+                 
                     >{nameError}</p>}
                 </div>
 
@@ -112,21 +116,30 @@ export default function Contact() {
                     <input type="email" 
                     className="email__input" 
                     id="email" name="email" 
+                    aria-describedby="email-error"
+                    aria-invalid={!!emailError}
                     onChange={() => setEmailError("")} />
                     {emailError &&
                     <p className="error"
+                    id="email-error"
                     role="alert"
-                    aria-live="assertive"
+                  
                     >{emailError}</p>}
                 </div>
 
                 <div className="contact__input">
                     <label htmlFor="message">Message</label>
-                    <textarea className="message__input" id="message" name="message" rows="2" onChange={() => setMessageError("")}></textarea>
+                    <textarea className="message__input" 
+                    id="message" name="message"
+                     rows="2" 
+                     aria-invalid={!!messageError}
+                      onChange={() => setMessageError("")}>
+
+                      </textarea>
                     {messageError && 
                     <p className="error"
                     role="alert"
-                    aria-live="assertive"
+                   
                     >{messageError}</p>}
                 </div>
 
