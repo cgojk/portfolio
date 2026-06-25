@@ -54,15 +54,12 @@ body {
               HERO SECTION 
          ==============================*/
 
-
 .image__hero--picture img{
    
 width: 100%;
-  max-width: 174px;
-  max-height: 383px;
-  height: auto;
-
-
+max-width: 174px;
+max-height: 383px;
+height: auto;
 
 }
 .hero__header{
@@ -71,10 +68,7 @@ width: 100%;
     gap: 2rem;
     position:relative;
      overflow: visible;
-        
-
-
-   
+       
     }
     .pattern__rings{
          position:absolute;
@@ -91,11 +85,6 @@ width: 100%;
        
       }
 
-      
-    
-
-   
-    
 
 .wrapper__hero-content{
     display:flex;
@@ -185,7 +174,7 @@ width: 100%;
 .navigation__nav{
         display:flex;
         flex-direction:column;
-        gap: 2rem;
+        gap: 1rem;
         align-items: center;
         position:relative;
         z-index:10;
