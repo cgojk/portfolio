@@ -49,7 +49,7 @@ export default function Hero(){
                     passionate about building accessible web
                      apps that users love. 
                   </p>
-                  <Button to="/contact"> Contact me</Button>
+                  <Button href="#contact"> Contact me</Button>
                 </div>
 
            
